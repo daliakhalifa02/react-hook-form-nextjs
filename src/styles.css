@@ -1,0 +1,35 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+label{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: rgb(186, 39, 39);
+}
+
+input, button{
+    border: 1px grey solid;
+    padding: 5px;
+    cursor: pointer;
+}
+
+label{
+    margin-bottom: 20px;
+}
+
+.form-container{
+    margin-top: 50px;
+}
+
+html, input{
+    background-color: rgba(208, 208, 210, 0.344);
+}
+
+select{
+    background-color: white;
+    padding: 8px;
+}
