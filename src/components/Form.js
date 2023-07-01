@@ -9,6 +9,7 @@ const Form = () => {
   const onSubmit = (data) => {
     setFormData(data);
     reset();
+    alert(`Signed up successfully!\n\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nAge: ${formData.age}`)
   };
 
   return (
@@ -51,14 +52,6 @@ const Form = () => {
 
             <button type="submit">Submit</button>
         </form>
-        {formData && (
-            <div className='text-center mt-20'>
-                <h2 className='text-xl text-lime-600'>Signed up successfully!</h2>
-                <p>Name: {formData.firstName} {formData.lastName}</p>
-                <p>Email: {formData.email}</p>
-                <p>Age: {formData.age}</p>
-            </div>
-        )}
     </div>
     </>
     
