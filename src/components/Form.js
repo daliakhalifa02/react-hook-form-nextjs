@@ -6,9 +6,10 @@ const Form = () => {
   const { register, handleSubmit, formState: { errors}, reset } = useForm();
   const [formData, setFormData] = useState(null);
 
-  const onSubmit = (data) => {
+  const onSubmit = (formData) => {
+    
+    setFormData(formData);
     alert(`Signed up successfully!\n\nName: ${formData.firstName} ${formData.lastName}\nEmail: ${formData.email}\nAge: ${formData.age}`)
-    setFormData(data);
     reset();
   };
 
